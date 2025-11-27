@@ -30,7 +30,6 @@ func InitDB() *gorm.DB {
 		log.Fatalf("Failed to connect database: %v", err)
 	}
 
-	db.Migrator().DropTable(&model.User{}, &model.UserDetails{}, &model.Book{}, &model.Cart{}, &model.CartBook{}, &model.Order{}, &model.OrderBook{}, &model.Review{})
 	db.AutoMigrate(&model.User{}, &model.UserDetails{}, &model.Book{}, &model.Cart{}, &model.CartBook{}, &model.Order{}, &model.OrderBook{}, &model.Review{})
 
 	return db
