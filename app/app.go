@@ -9,42 +9,6 @@ import (
 	"gorm.io/gorm"
 )
 
-var Routes =  map[string]string {
-	"NotFound": 		"/",
-	"Home":				"/user",
-	"AdminHome":		"/admin",
-
-	"Register":			"/user/register",
-	"Login":			"/user/login",
-	"CreateDetails":	"/user/createDetails/{userID}",
-	"GetUserByID":		"/user/getById/{userID}",
-
-	"CreateBook":		"/book/create",
-	"GetByTitle":		"/book?title={bookTitle}",
-	"GetBooks":			"/book/all",
-	"GetBooksByAuthor":	"/book/author?author={bookAuthor}",
-	"UpdateStock":		"/book/updateStock/{bookID}",
-
-	"AddToCart":		"/cart/add/{userID}/{bookID}",
-	"ClearCart":		"/cart/clear/{userID}",
-	"RemoveFromCart":	"/cart/remove/{userID}/{bookID}",
-	"UpdateQuantity":	"/cart/update/{userID}/{bookID}?quantity={quantity}",
-	"GetCart":			"/cart/{cartID}",
-
-	"CreateOrder":		"/order/create/{userID}?address={address}",
-	"CancelOrder":		"/order/cancel/{orderID}",
-	"GetOrder":			"/order/{orderID}",
-	"GetUserOrders":	"/order/user/{userID}",
-	"GetOrdersByStatus":"/order/status/?status={status}",
-	"UpdateStatus":		"/order/update/{orderID}?status={status}",
-
-	"AddReview":		"/review/add/{userID}/{bookID}",
-	"GetReviewsByBook": "/review/get/{bookID}",
-	"GetReviewsByUser": "/review/getByUser/{userID}",
-	"UpdateReview":		"/review/update/{userID}/{bookID}",
-	"DeleteReviewByID":	"/review/delete/{reviewID}",
-}
-
 type App struct {
 	DB *gorm.DB
 
