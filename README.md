@@ -79,28 +79,28 @@ API Endpoints
 | **GET**    | `/`                                                       | Not found                                                                          |
 | **GET**    | `/user`                                                   | Home endpoint for user                                                             |
 | **GET**    | `/admin`                                                  | Endpoint only for admin                                                            |
-| **POST**   | `/user/register`                                          | Handle user registration                                                           |
-| **POST**   | `/user/login`                                             | Handle user login                                                                  |
-| **POST**   | `/user/createDetails/{userID}`                            | Handle create user details                                                         |
-| **GET**    | `/user/getById/{userID}`                                  | Handle get user information                                                        |
-| **POST**   | `/book/create`                                            | Handle create book                                                                 |
-| **GET**    | `/book?title={bookTitle}`                                 | Handle get book by title                                                           |
-| **GET**    | `/book/all`                                               | Handle get all books                                                               |
-| **GET**    | `/book/author?author={bookAuthor}`                        | Handle get books by author                                                         |
-| **PATCH**  | `/book/updateStock/{bookID}`                              | Handle update book stock by                                                        |
-| **POST**   | `/cart/add/{userID}/{bookID}`                             | Handle add book to user cart                                                       |
-| **DELETE** | `/cart/clear/{userID}`                                    | Handle delete user cart                                                            |
-| **DELETE** | `/cart/remove/{userID}/{bookID}`                          | Handle remove book from user cart                                                  |
-| **PATCH**  | `/cart/update/{userID}/{bookID}?quantity={quantity}`      | Handle update book quantity in user cart                                           |
-| **GET**    | `/cart/{cartID}`                                          | Handle get cart                                                                    |
-| **POST**   | `/order/create/{userID}?address={address}`                | Handle create order by user id with address                                        |
-| **PATCH**  | `/order/cancel/{orderID}`                                 | Handle cancel order                                                                |
-| **GET**    | `/order/{orderID}`                                        | Handle get order                                                                   |
-| **GET**    | `/order/user/{userID}`                                    | Handle get user orders                                                             |
-| **GET**    | `/order/status/?status={status}`                          | Handle get orders by status                                                        |
-| **PATCH**  | `/order/update/{orderID}?status={status}`                 | Handle update order status                                                         |
-| **POST**   | `/review/add/{userID}/{bookID}`                           | Handle add review                                                                  |
-| **GET**    | `/review/get/{bookID}`                                    | Handle get book reviews                                                            |
-| **GET**    | `/review/getByUser/{userID}`                              | Handle get reviews from user                                                       |
-| **PATCH**  | `/review/update/{userID}/{bookID}`                        | Handle update book review                                                          |
-| **DELETE** | `/review/delete/{reviewID}`                               | Handle delete review                                                               |
+| **POST**   | `/user/register`                                          | User registration                                                                  |
+| **POST**   | `/user/login`                                             | User login                                                                         |
+| **POST**   | `/user/createDetails/{userID}`                            | Create user details                                                                |
+| **GET**    | `/user/getById/{userID}`                                  | Get user information                                                               |
+| **POST**   | `/book/create`                                            | Create book                                                                        |
+| **GET**    | `/book?title={bookTitle}`                                 | Get book by title                                                                  |
+| **GET**    | `/book/all`                                               | Get all books                                                                      |
+| **GET**    | `/book/author?author={bookAuthor}`                        | Get books by author                                                                |
+| **PATCH**  | `/book/updateStock/{bookID}`                              | Update book stock by                                                               |
+| **POST**   | `/cart/add/{userID}/{bookID}`                             | Add book to user cart                                                              |
+| **DELETE** | `/cart/clear/{userID}`                                    | Delete user cart                                                                   |
+| **DELETE** | `/cart/remove/{userID}/{bookID}`                          | Remove book from user cart                                                         |
+| **PATCH**  | `/cart/update/{userID}/{bookID}?quantity={quantity}`      | Update book quantity in user cart                                                  |
+| **GET**    | `/cart/{cartID}`                                          | Get cart                                                                           |
+| **POST**   | `/order/create/{userID}?address={address}`                | Create order by user id with address                                               |
+| **PATCH**  | `/order/cancel/{orderID}`                                 | Cancel order                                                                       |
+| **GET**    | `/order/{orderID}`                                        | Get order                                                                          |
+| **GET**    | `/order/user/{userID}`                                    | Get user orders                                                                    |
+| **GET**    | `/order/status/?status={status}`                          | Get orders by status                                                               |
+| **PATCH**  | `/order/update/{orderID}?status={status}`                 | Update order status                                                                |
+| **POST**   | `/review/add/{userID}/{bookID}`                           | Add review                                                                         |
+| **GET**    | `/review/get/{bookID}`                                    | Get book reviews                                                                   |
+| **GET**    | `/review/getByUser/{userID}`                              | Get reviews from user                                                              |
+| **PATCH**  | `/review/update/{userID}/{bookID}`                        | Update book review                                                                 |
+| **DELETE** | `/review/delete/{reviewID}`                               | Delete review                                                                      |
