@@ -5,7 +5,6 @@ import (
 	"BookVault-API/handler"
 	"BookVault-API/middleware"
 	"BookVault-API/service"
-	
 	"net/http"
 	"gorm.io/gorm"
 )
@@ -98,7 +97,7 @@ func NewApp() *App {
 }
 
 
-func (a *App) Init() {
+func (a *App) Run() {
 	mux := http.NewServeMux()
 
 	//homeHandlers
