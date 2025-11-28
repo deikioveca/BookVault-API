@@ -61,8 +61,8 @@ Running locally
 -
 * clone the repo
 * go mod download
-* start postgresql and ensure databases bookvault and bookvault_test exist.
-* create .env file, write database config variables and jwt secret -> DB_HOST, DB_PORT, DB_USER, DB_PASSWORD, DB_NAME, DB_NAME_TEST, DB_SSLMODE, JWT_SECRET.
+* start postgresql and ensure databases bookvault and bookvault_test exist
+* create .env file, write database config variables and jwt secret -> DB_HOST, DB_PORT, DB_USER, DB_PASSWORD, DB_NAME, DB_NAME_TEST, DB_SSLMODE, JWT_SECRET
 * go run main.go
 
 Running with Docker
