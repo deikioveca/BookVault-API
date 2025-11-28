@@ -87,16 +87,16 @@ API Endpoints
 | **GET**    | `/book?title={bookTitle}`                                 | Get book by title                                                                  |
 | **GET**    | `/book/all`                                               | Get all books                                                                      |
 | **GET**    | `/book/author?author={bookAuthor}`                        | Get books by author                                                                |
-| **PATCH**  | `/book/updateStock/{bookID}`                              | Update book stock by                                                               |
+| **PATCH**  | `/book/updateStock/{bookID}`                              | Update book stock by id                                                            |
 | **POST**   | `/cart/add/{userID}/{bookID}`                             | Add book to user cart                                                              |
-| **DELETE** | `/cart/clear/{userID}`                                    | Delete user cart                                                                   |
+| **DELETE** | `/cart/clear/{userID}`                                    | Clear user cart                                                                    |
 | **DELETE** | `/cart/remove/{userID}/{bookID}`                          | Remove book from user cart                                                         |
 | **PATCH**  | `/cart/update/{userID}/{bookID}?quantity={quantity}`      | Update book quantity in user cart                                                  |
-| **GET**    | `/cart/{cartID}`                                          | Get cart                                                                           |
+| **GET**    | `/cart/{cartID}`                                          | Get cart by id                                                                     |
 | **POST**   | `/order/create/{userID}?address={address}`                | Create order by user id with address                                               |
 | **PATCH**  | `/order/cancel/{orderID}`                                 | Cancel order                                                                       |
-| **GET**    | `/order/{orderID}`                                        | Get order                                                                          |
-| **GET**    | `/order/user/{userID}`                                    | Get user orders                                                                    |
+| **GET**    | `/order/{orderID}`                                        | Get order by id                                                                    |
+| **GET**    | `/order/user/{userID}`                                    | Get user orders by user id                                                         |
 | **GET**    | `/order/status/?status={status}`                          | Get orders by status                                                               |
 | **PATCH**  | `/order/update/{orderID}?status={status}`                 | Update order status                                                                |
 | **POST**   | `/review/add/{userID}/{bookID}`                           | Add review                                                                         |
